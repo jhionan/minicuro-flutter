@@ -52,7 +52,7 @@ class _WeatherState extends State<Weather> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   Text(
-                    _city??defautCity,
+                    _city.replaceAll('+', ' ')??defautCity,
                     style: cityStyle(),
                   ),
                 ],
@@ -106,10 +106,10 @@ class _WeatherState extends State<Weather> {
         .push(MaterialPageRoute(builder: (BuildContext context) {
       return CitySelector();
     }));
-    print(result.toString()+'     ==================================');
+
     if (result!=null && result.containsKey('city') && result['city'].toString().isNotEmpty) {
-      //getWeather(result['city']);
-      _city = result['city'];
+      var mCity = result['city'] as String;
+      _city = mCity.replaceAll(' ', '+');
       
     }
   }

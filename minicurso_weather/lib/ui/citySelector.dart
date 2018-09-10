@@ -11,21 +11,18 @@ class CitySelector extends StatelessWidget {
       ),
       body: Stack(
         children: <Widget>[
-          ListView(
-            children: <Widget>[
-              Image.asset('lib/images/nice_day.jpg', 
-              width: 490.0,
-              height: 1200.0,
-              fit: BoxFit.fill,),
-            ],
-          ),
+          Image.asset('lib/images/nice_day.jpg', 
+          width: 490.0,
+          height: 1200.0,
+          fit: BoxFit.fill,),
           new Center(
               child: Card(
                   margin: EdgeInsets.all(20.0),
 
             child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(26.0),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new TextField(
                         controller: _cityController,
@@ -47,7 +44,7 @@ class CitySelector extends StatelessWidget {
                     ],
                   ),
               ),
-            color: Colors.white.withAlpha(200),
+            color: Colors.white.withAlpha(190),
           )),
         ],
       ),
