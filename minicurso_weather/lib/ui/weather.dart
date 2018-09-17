@@ -44,6 +44,7 @@ class _WeatherState extends State<Weather> {
               fit: BoxFit.fill,
             ),
           ),
+         
           Padding(
             padding: const EdgeInsets.all(25.0),
             child: new Container(
