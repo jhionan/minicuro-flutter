@@ -11,7 +11,7 @@ class CitySelector extends StatelessWidget {
       ),
       body: Stack(
         children: <Widget>[
-          Image.asset('lib/images/nice_day.jpg', 
+          Image.asset('images/ocean.jpg', 
           width: 490.0,
           height: 1200.0,
           fit: BoxFit.fill,),

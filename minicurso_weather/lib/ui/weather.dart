@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:minicurso_weather/utils/utils.dart';
+import 'package:minicurso_weather/api/api.dart';
+
 import 'citySelector.dart';
 
 class Weather extends StatefulWidget {
@@ -38,7 +39,7 @@ class _WeatherState extends State<Weather> {
         children: <Widget>[
           new Center(
             child: new Image.asset(
-              'lib/images/cold.jpeg',
+              'images/cold.jpeg',
               width: 900.0,
               height: 1200.0,
               fit: BoxFit.fill,
